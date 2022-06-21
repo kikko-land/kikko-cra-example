@@ -1,15 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import {
+  DbProvider,
+  EnsureDbLoaded,
+  IInitDbClientConfig,
+  initAbsurdWebBackend,
+  migrationPlugin,
+  reactiveQueriesPlugin,
+} from "@trong-orm/react";
+import { createNotesTableMigration } from "./migrations/createNotesTable";
+import sqlWasmUrl from "@trong-orm/sql.js/dist/sql-wasm.wasm";
+
+const config: IInitDbClientConfig = {
+  dbName: "cra-example",
+  dbBackend: initAbsurdWebBackend({
+    wasmUrl: sqlWasmUrl,
+  }),
+  plugins: [
+    migrationPlugin([createNotesTableMigration]),
+    reactiveQueriesPlugin,
+  ],
+};
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <DbProvider config={config}>
+      <EnsureDbLoaded fallback={<div>Loading db...</div>}>
+        <App />
+      </EnsureDbLoaded>
+    </DbProvider>
   </React.StrictMode>
 );
 
