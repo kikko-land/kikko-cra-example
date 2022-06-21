@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import {
   DbProvider,
@@ -13,6 +12,7 @@ import {
 } from "@trong-orm/react";
 import { createNotesTableMigration } from "./migrations/createNotesTable";
 import sqlWasmUrl from "@trong-orm/sql.js/dist/sql-wasm.wasm";
+import { List } from "./List";
 
 const config: IInitDbClientConfig = {
   dbName: "cra-example",
@@ -32,7 +32,7 @@ root.render(
   <React.StrictMode>
     <DbProvider config={config}>
       <EnsureDbLoaded fallback={<div>Loading db...</div>}>
-        <App />
+        <List />
       </EnsureDbLoaded>
     </DbProvider>
   </React.StrictMode>

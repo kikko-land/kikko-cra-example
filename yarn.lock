@@ -1183,6 +1183,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@faker-js/faker@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.3.0.tgz#a508df35ded585c4e071cb5d9d7c89623c837fae"
+  integrity sha512-1W0PZezq2rxlAssoWemi9gFRD8IQxvf0FPL5Km3TOmGHFG7ib0TbFBJ0yC7D/1NsxunjNTK6WjUXV8ao/mKZ5w==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -1736,112 +1741,112 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@trong-orm/absurd-web-backend@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/absurd-web-backend/-/absurd-web-backend-1.0.18.tgz#91f2d1d65cf44e53481da32e089e524377f7467f"
-  integrity sha512-hRYS46kJnkbRrqXulWthvE9XoUzYZ7HQ4bfKm2/6fqQbJSRB2H+/fIXR04MDRDmJCG4ePCoPDAWiU6HyC/Aa/g==
+"@trong-orm/absurd-web-backend@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/absurd-web-backend/-/absurd-web-backend-1.0.19.tgz#9129a34f38a31955451a65e2a5e1dde15b584228"
+  integrity sha512-LnuV/nneA5pkNfWY+Pz0BWjXWmb8s7dtMdXlPNtRSQVwreLMPd+oJxX1X2T9dREYV8O58v8TiHMAhidn435vpQ==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
     "@trong-orm/sql.js" "^1.6.7"
     absurd-sql "^0.0.53"
     nanoid "^3.3.4"
     rxjs "^7.5.5"
 
-"@trong-orm/core@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/core/-/core-1.0.18.tgz#ba36b2681d05804a2481183d136f6256f6828212"
-  integrity sha512-8aYJ4kzFkOReXyYprfE+ht9J6M0A5ZVGITdGahg2ZIIcEH/+LGrWtwvBJBPc0d9v15J0rU2aYHV6eOZDmORt2w==
+"@trong-orm/core@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/core/-/core-1.0.19.tgz#ab37b05577237f46d4cefd733fd5cf30347db602"
+  integrity sha512-SUH9g8moJuWvUPvoBcOeOfun9BJQvCZ8HkzrtCP0xP4mdSsH1hTN02pHmlt3Pn16utLSpF6DiT+dhlhigUWT1g==
   dependencies:
-    "@trong-orm/query-builder" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/query-builder" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
     nanoid "^3.3.4"
     rxjs "^7.5.5"
     ts-essentials "^9.1.2"
 
-"@trong-orm/migrations-plugin@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/migrations-plugin/-/migrations-plugin-1.0.18.tgz#d29b0ce980cb3f72127d3c0e3a113a318f21b80f"
-  integrity sha512-sbb02nT/Exbu6MbVAmQqxWhlCCp+B+OC0EnqrnogACs+uWUfjLzjAOyf+kMGvmoOLwDxfHZH/bj6Q7YFnvUKlw==
+"@trong-orm/migrations-plugin@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/migrations-plugin/-/migrations-plugin-1.0.19.tgz#ba69deb2ef0e36408d8b4b6c38bd0fe940ed5b2a"
+  integrity sha512-Mdfl3VOj47rCUtEAqC0X+TZb6BAhASdSWO+aDK5waJ4DJ2xr2VCz2f7NpuEBaXRHcR9z7DXNr5lvPNru9YFmEg==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
 
-"@trong-orm/query-builder@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/query-builder/-/query-builder-1.0.18.tgz#3b44a81ba2995b2492664a83cefffb66b70d9ed7"
-  integrity sha512-cQydzf3vYFgYDaoxkKd8ug67e8s3KIsWJ2C6E/kZc79yImoNVqw8YNXOtcwI+N9YUU+1MivffgfW3B7F/9rfzw==
+"@trong-orm/query-builder@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/query-builder/-/query-builder-1.0.19.tgz#65dcf139a5fdd008e93db79a66cb252bc0bc05d5"
+  integrity sha512-CZF46K0vOdIupUsG+vTEpAoba2zUmO8NwWsElkYtmWrJHfZ9/QAj47Ebvr1DA/XZEnyxnYV1DPxOqid/E31x1Q==
   dependencies:
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/sql" "^1.0.19"
 
-"@trong-orm/react-queries-hooks@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react-queries-hooks/-/react-queries-hooks-1.0.18.tgz#06db2133cba56d63be44de132cdede596ab0602d"
-  integrity sha512-X8f0LDhO763wlgC4S28wKC1MAL0F6ASF/YUPFMEcIRRM/aKgGKjeWeIZlC/Pxrl/Yb2kjZRQWYTePWP7TvRK/Q==
+"@trong-orm/react-queries-hooks@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/react-queries-hooks/-/react-queries-hooks-1.0.19.tgz#70d2eee3db884be70a16696eb0164bcdc799a6ba"
+  integrity sha512-qnXdMDwAQk9iDBzFa18iEjPqY2vGVFNQr/2OWqNbiRHvnP4K6cjkyaNb9OEX/1jF/QIIJo3NyK6a3G+VVwvnpA==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/reactive-queries-plugin" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/reactive-queries-plugin" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
     react "^18.1.0"
     react-dom "^18.1.0"
     rxjs "^7.5.5"
 
-"@trong-orm/react-records-hooks@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react-records-hooks/-/react-records-hooks-1.0.18.tgz#654acd2e6d43a370489e6b05fa7c9789e09cd065"
-  integrity sha512-9g36aFwQZTY8QIs+DsjLaU7uqWXXq7uyz9Keo3pXc6R0rlyLH9cQ7R1n+2Dv+aBs2uB1vB1KOP7Ml5dDjgCdiw==
+"@trong-orm/react-records-hooks@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/react-records-hooks/-/react-records-hooks-1.0.19.tgz#84f75fcd6743e7faea6c2c5cd2485abdd9bdc4de"
+  integrity sha512-eZsGlo8Isl6V8GdusXeRipHk5w/+oqDfU9FAbMV4MQK4yHc3Cyec8bFl8tFwH62OHPDzDOdMZfGXAIA9zdxESQ==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/react-queries-hooks" "^1.0.18"
-    "@trong-orm/reactive-queries-plugin" "^1.0.18"
-    "@trong-orm/records" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/react-queries-hooks" "^1.0.19"
+    "@trong-orm/reactive-queries-plugin" "^1.0.19"
+    "@trong-orm/records" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
     react "^18.1.0"
     rxjs "^7.5.5"
 
-"@trong-orm/react@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react/-/react-1.0.18.tgz#49028abec91ceb0486f419853b8a985fa65e734c"
-  integrity sha512-j2QxxqItgNDYJFiFAajC4wzFTiHddWCqzcHm5DhblSu3y2DaDPThaOYOc1p0GvuCwAr0y/2E5O6uAyGlcAQ5Uw==
+"@trong-orm/react@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/react/-/react-1.0.19.tgz#ae40393d1af14034316035ee8834dc0c85594d39"
+  integrity sha512-cTqpThjQIcx3clMONz5WrvBYjiDzt0ieiguYhla5ApVykcyPKO0E8tR0MO/cRgWkowXtKT0AwQp5gT1HldGg/A==
   dependencies:
-    "@trong-orm/absurd-web-backend" "^1.0.18"
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/migrations-plugin" "^1.0.18"
-    "@trong-orm/query-builder" "^1.0.18"
-    "@trong-orm/react-queries-hooks" "^1.0.18"
-    "@trong-orm/react-records-hooks" "^1.0.18"
-    "@trong-orm/reactive-queries-plugin" "^1.0.18"
-    "@trong-orm/records" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/absurd-web-backend" "^1.0.19"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/migrations-plugin" "^1.0.19"
+    "@trong-orm/query-builder" "^1.0.19"
+    "@trong-orm/react-queries-hooks" "^1.0.19"
+    "@trong-orm/react-records-hooks" "^1.0.19"
+    "@trong-orm/reactive-queries-plugin" "^1.0.19"
+    "@trong-orm/records" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
 
-"@trong-orm/reactive-queries-plugin@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/reactive-queries-plugin/-/reactive-queries-plugin-1.0.18.tgz#da63d40e6d740056d60c9e7fcb7a786aa5481b7d"
-  integrity sha512-/5ozBXkMmYML/zQW/W1dputtD2v+KvB///NN+6uiXc1NSaxldhfaSaG72YIFW0+0J5CesYw4POckEXli99s2KA==
+"@trong-orm/reactive-queries-plugin@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/reactive-queries-plugin/-/reactive-queries-plugin-1.0.19.tgz#c71c5d0caf35f04db450436d9489e49201331fa1"
+  integrity sha512-tTFaUsSVdgunHoa8O5wk4f/wG0oU0TYRt0J7hWWIuB5QWfWTPvylat9JsfOaYlBgwdf5yKkRIK4i1kFt6DtXZg==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/query-builder" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/query-builder" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
     broadcast-channel "^4.12.0"
     rxjs "^7.5.5"
 
-"@trong-orm/records@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/records/-/records-1.0.18.tgz#2116b2f187efcf909a1759ccfcfb4cbc1e3a0b61"
-  integrity sha512-g+jb5HSInGCR5PIWNPs3CvGF8sDbq0RGbmB6XfVO0+9u6pMq34kfHxFoMLgDYTNC2vsvNX9e1XJhZ4sDhLQUng==
+"@trong-orm/records@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/records/-/records-1.0.19.tgz#387481e5fe8d543bfeb0b42253420ab4cc279a45"
+  integrity sha512-Y3ieirlaYwM4wGebiHJfYVUw2h5i5Q5YyMejateNlcvRBZehcxFQVCOqmyk11vKs86zWt+I268WqO7PhHOaOgg==
   dependencies:
-    "@trong-orm/core" "^1.0.18"
-    "@trong-orm/sql" "^1.0.18"
+    "@trong-orm/core" "^1.0.19"
+    "@trong-orm/sql" "^1.0.19"
 
 "@trong-orm/sql.js@^1.6.7":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@trong-orm/sql.js/-/sql.js-1.6.7.tgz#7586a7513f7bf2d48173876e630f0e083cfbc2c5"
   integrity sha512-A9Yz/EdUPzic2c1vcOllwCh7RJ7otsBfp9xsEqvpByKyKUVTXZHSwfnRYSApmwL5ferRXlNcz9iAKMKnQjO6DQ==
 
-"@trong-orm/sql@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@trong-orm/sql/-/sql-1.0.18.tgz#f0a25c86e1718b9d71e90f8c6598bdc4ae605177"
-  integrity sha512-1NkKbT/5oUFVPhrrCC02UADT+ykWDvp9OKdjhrg3rkyyUKEO7EKiAivMAxbvZ4NtkNGofkPFDkHuYUoZK4ouEw==
+"@trong-orm/sql@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@trong-orm/sql/-/sql-1.0.19.tgz#3af0649cd3e08db1d4e08ff3ae03c4b78aba7e7a"
+  integrity sha512-+Bfgv7koc9GeCpPr0ugSgEZ1E4AdPIz3FOM1BtRxjAAEl8Jn5GlOKfDeqazoRDaQhKYFwpkSrXogtWmsleMeig==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -2082,6 +2087,13 @@
   version "18.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.5.tgz#330b2d472c22f796e5531446939eacef8378444a"
   integrity sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-highlight-words@^0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@types/react-highlight-words/-/react-highlight-words-0.16.4.tgz#441b6f05c27ce6ab76833803a84bc385f0a1e8f2"
+  integrity sha512-KITBX3xzheQLu2s3bUgLmRE7ekmhc52zRjRTwkKayQARh30L4fjEGzGm7ULK9TuX2LgxWWavZqyQGDGjAHbL3w==
   dependencies:
     "@types/react" "*"
 
@@ -4767,6 +4779,11 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+highlight-words-core@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/highlight-words-core/-/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
+  integrity sha512-BXUKIkUuh6cmmxzi5OIbUJxrG8OAk2MqoL1DtO3Wo9D2faJg2ph5ntyuQeLqaHJmzER6H5tllCDA9ZnNe9BVGg==
+
 hoopy@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/hoopy/-/hoopy-0.1.4.tgz#609207d661100033a9a9402ad3dea677381c1b1d"
@@ -6076,6 +6093,11 @@ memfs@^3.1.2, memfs@^3.4.3:
   dependencies:
     fs-monkey "^1.0.3"
 
+memoize-one@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.1.0.tgz#a2387c58c03fff27ca390c31b764a79addf3f906"
+  integrity sha512-2GApq0yI/b22J2j9rhbrAlsHb0Qcz+7yWxeLG8h+95sl1XPUgeLimQSOdur4Vw7cUhrBHwaUZxWFZueojqNRzA==
+
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
@@ -7264,7 +7286,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7396,6 +7418,15 @@ react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+
+react-highlight-words@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/react-highlight-words/-/react-highlight-words-0.18.0.tgz#ff3b3ef7cb497fa2e8fa4d54c1a1a98ac6390d0e"
+  integrity sha512-5z+46eLPjB4JWgOhuQ0E+6iUPTD1U3amiy5KKjzZmeJ5zyvHr91hnzBT3UHya/KlySm5KRTKpYpba9vs67oO2A==
+  dependencies:
+    highlight-words-core "^1.2.0"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.8"
 
 react-is@^16.13.1:
   version "16.13.1"
