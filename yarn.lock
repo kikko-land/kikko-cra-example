@@ -1741,112 +1741,83 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@trong-orm/absurd-web-backend@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/absurd-web-backend/-/absurd-web-backend-1.0.19.tgz#9129a34f38a31955451a65e2a5e1dde15b584228"
-  integrity sha512-LnuV/nneA5pkNfWY+Pz0BWjXWmb8s7dtMdXlPNtRSQVwreLMPd+oJxX1X2T9dREYV8O58v8TiHMAhidn435vpQ==
+"@trong-orm/absurd-web-backend@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/absurd-web-backend/-/absurd-web-backend-1.0.35.tgz#90171438dcdd68d11b398d11b77716820edc228c"
+  integrity sha512-emMp18JChk51YoK2Qdj5X2BOhBtnZ/emW9bnO0GhQ38VaWaVTB2uyIepNWSGPRWh/cRQhqmFnItfzRe+edVlcA==
   dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
+    "@trong-orm/core" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
     "@trong-orm/sql.js" "^1.6.7"
     absurd-sql "^0.0.53"
-    nanoid "^3.3.4"
     rxjs "^7.5.5"
 
-"@trong-orm/core@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/core/-/core-1.0.19.tgz#ab37b05577237f46d4cefd733fd5cf30347db602"
-  integrity sha512-SUH9g8moJuWvUPvoBcOeOfun9BJQvCZ8HkzrtCP0xP4mdSsH1hTN02pHmlt3Pn16utLSpF6DiT+dhlhigUWT1g==
+"@trong-orm/core@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/core/-/core-1.0.35.tgz#90f0d504677f63eec47434b3f6e6b431762a19e5"
+  integrity sha512-KZQyT33i4Qy6uzpxjgFiyHB4sBlSOA/Y9sRcWhiPr8eYqr6v3A19JeGOFilvWiW0UxiCtFouIYCe+FjdDS4E1g==
   dependencies:
-    "@trong-orm/query-builder" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
-    nanoid "^3.3.4"
+    "@trong-orm/query-builder" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
     rxjs "^7.5.5"
     ts-essentials "^9.1.2"
 
-"@trong-orm/migrations-plugin@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/migrations-plugin/-/migrations-plugin-1.0.19.tgz#ba69deb2ef0e36408d8b4b6c38bd0fe940ed5b2a"
-  integrity sha512-Mdfl3VOj47rCUtEAqC0X+TZb6BAhASdSWO+aDK5waJ4DJ2xr2VCz2f7NpuEBaXRHcR9z7DXNr5lvPNru9YFmEg==
+"@trong-orm/migrations-plugin@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/migrations-plugin/-/migrations-plugin-1.0.35.tgz#aa56eb34abc3246a9a58884620646db802405100"
+  integrity sha512-PRRRejXScocCtSFIXPrEeO18HBQztqYvmD3Bscv1YkKfnDg/ZWx8S8kX1iaMrb4z4nmMapN+DmBnrNwvZn2e/Q==
   dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
+    "@trong-orm/core" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
 
-"@trong-orm/query-builder@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/query-builder/-/query-builder-1.0.19.tgz#65dcf139a5fdd008e93db79a66cb252bc0bc05d5"
-  integrity sha512-CZF46K0vOdIupUsG+vTEpAoba2zUmO8NwWsElkYtmWrJHfZ9/QAj47Ebvr1DA/XZEnyxnYV1DPxOqid/E31x1Q==
+"@trong-orm/query-builder@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/query-builder/-/query-builder-1.0.35.tgz#682e6aed6d87962bff79cb9ba2d92f50dc8552c6"
+  integrity sha512-GAt6Fff0Z0gINgv5SekS2F6lgyHrpWMKxg4x4s+tRisZNlLU5RjaOuLwxV6G0QeaW6oh9QbZcmD2IimJkeP3sA==
   dependencies:
-    "@trong-orm/sql" "^1.0.19"
+    "@trong-orm/sql" "^1.0.35"
 
-"@trong-orm/react-queries-hooks@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react-queries-hooks/-/react-queries-hooks-1.0.19.tgz#70d2eee3db884be70a16696eb0164bcdc799a6ba"
-  integrity sha512-qnXdMDwAQk9iDBzFa18iEjPqY2vGVFNQr/2OWqNbiRHvnP4K6cjkyaNb9OEX/1jF/QIIJo3NyK6a3G+VVwvnpA==
+"@trong-orm/react-queries-hooks@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/react-queries-hooks/-/react-queries-hooks-1.0.35.tgz#f5783d11b7e9787e24b05f9547ebcaedba4505b4"
+  integrity sha512-w81Mz20dEx5KfXwe7YjNIlU68ZED+u4m6znAXpToyhKd28HEScz1d1SlRRvWDzsv0iZb+x8mZsfe1C5ABYXLQA==
   dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/reactive-queries-plugin" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
-    react "^18.1.0"
-    react-dom "^18.1.0"
+    "@trong-orm/core" "^1.0.35"
+    "@trong-orm/reactive-queries-plugin" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
     rxjs "^7.5.5"
 
-"@trong-orm/react-records-hooks@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react-records-hooks/-/react-records-hooks-1.0.19.tgz#84f75fcd6743e7faea6c2c5cd2485abdd9bdc4de"
-  integrity sha512-eZsGlo8Isl6V8GdusXeRipHk5w/+oqDfU9FAbMV4MQK4yHc3Cyec8bFl8tFwH62OHPDzDOdMZfGXAIA9zdxESQ==
+"@trong-orm/react@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/react/-/react-1.0.35.tgz#dea54fbc935e5016a3aed6d03c22e811e419eb20"
+  integrity sha512-5YXk0rFzjnY9TNpAJMoF4ZB+oh38ZbZHx927TqduLhWwXsk9R9V0PI3eUY0M61shra6NsZWNkDMlLrABcUZWzg==
   dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/react-queries-hooks" "^1.0.19"
-    "@trong-orm/reactive-queries-plugin" "^1.0.19"
-    "@trong-orm/records" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
-    react "^18.1.0"
-    rxjs "^7.5.5"
+    "@trong-orm/core" "^1.0.35"
+    "@trong-orm/migrations-plugin" "^1.0.35"
+    "@trong-orm/react-queries-hooks" "^1.0.35"
+    "@trong-orm/reactive-queries-plugin" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
 
-"@trong-orm/react@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/react/-/react-1.0.19.tgz#ae40393d1af14034316035ee8834dc0c85594d39"
-  integrity sha512-cTqpThjQIcx3clMONz5WrvBYjiDzt0ieiguYhla5ApVykcyPKO0E8tR0MO/cRgWkowXtKT0AwQp5gT1HldGg/A==
+"@trong-orm/reactive-queries-plugin@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/reactive-queries-plugin/-/reactive-queries-plugin-1.0.35.tgz#ce3fec58b67fb1e8974cf76d6c150256da186939"
+  integrity sha512-d1BotSutfTmQBrhIeo0pep3ij4yLe8g7qH1vsGXN6ZxYDAlab+d9eeZ0cx5sWBoF+1KOReOx58WgJjnEeU6oYA==
   dependencies:
-    "@trong-orm/absurd-web-backend" "^1.0.19"
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/migrations-plugin" "^1.0.19"
-    "@trong-orm/query-builder" "^1.0.19"
-    "@trong-orm/react-queries-hooks" "^1.0.19"
-    "@trong-orm/react-records-hooks" "^1.0.19"
-    "@trong-orm/reactive-queries-plugin" "^1.0.19"
-    "@trong-orm/records" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
-
-"@trong-orm/reactive-queries-plugin@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/reactive-queries-plugin/-/reactive-queries-plugin-1.0.19.tgz#c71c5d0caf35f04db450436d9489e49201331fa1"
-  integrity sha512-tTFaUsSVdgunHoa8O5wk4f/wG0oU0TYRt0J7hWWIuB5QWfWTPvylat9JsfOaYlBgwdf5yKkRIK4i1kFt6DtXZg==
-  dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/query-builder" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
+    "@trong-orm/core" "^1.0.35"
+    "@trong-orm/query-builder" "^1.0.35"
+    "@trong-orm/sql" "^1.0.35"
     broadcast-channel "^4.12.0"
     rxjs "^7.5.5"
-
-"@trong-orm/records@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/records/-/records-1.0.19.tgz#387481e5fe8d543bfeb0b42253420ab4cc279a45"
-  integrity sha512-Y3ieirlaYwM4wGebiHJfYVUw2h5i5Q5YyMejateNlcvRBZehcxFQVCOqmyk11vKs86zWt+I268WqO7PhHOaOgg==
-  dependencies:
-    "@trong-orm/core" "^1.0.19"
-    "@trong-orm/sql" "^1.0.19"
 
 "@trong-orm/sql.js@^1.6.7":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@trong-orm/sql.js/-/sql.js-1.6.7.tgz#7586a7513f7bf2d48173876e630f0e083cfbc2c5"
   integrity sha512-A9Yz/EdUPzic2c1vcOllwCh7RJ7otsBfp9xsEqvpByKyKUVTXZHSwfnRYSApmwL5ferRXlNcz9iAKMKnQjO6DQ==
 
-"@trong-orm/sql@^1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@trong-orm/sql/-/sql-1.0.19.tgz#3af0649cd3e08db1d4e08ff3ae03c4b78aba7e7a"
-  integrity sha512-+Bfgv7koc9GeCpPr0ugSgEZ1E4AdPIz3FOM1BtRxjAAEl8Jn5GlOKfDeqazoRDaQhKYFwpkSrXogtWmsleMeig==
+"@trong-orm/sql@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@trong-orm/sql/-/sql-1.0.35.tgz#4b600e1e77e00cfa5242221debb6f3f29d637406"
+  integrity sha512-iSa77CeQX8n7O5QNfT1VRdKtPn6d1pVBHmuHqe7B3NVxvYordcbczS61hRQ5CM1ld4RqkX4ZDYq4Ac37lTSk+Q==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -7406,7 +7377,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.1.0, react-dom@^18.2.0:
+react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -7503,7 +7474,7 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.1.0, react@^18.2.0:
+react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

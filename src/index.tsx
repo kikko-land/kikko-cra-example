@@ -1,33 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import {
   DbProvider,
   EnsureDbLoaded,
   IInitDbClientConfig,
-  initAbsurdWebBackend,
-  migrationPlugin,
+  migrationsPlugin,
   reactiveQueriesPlugin,
 } from "@trong-orm/react";
 import { createNotesTableMigration } from "./migrations/createNotesTable";
 import sqlWasmUrl from "@trong-orm/sql.js/dist/sql-wasm.wasm";
 import { List } from "./List";
+import { initAbsurdWebBackend } from "@trong-orm/absurd-web-backend";
+import ReactDOM from "react-dom/client";
 
 const config: IInitDbClientConfig = {
-  dbName: "cra-example",
+  dbName: "helloWorld",
   dbBackend: initAbsurdWebBackend({
     wasmUrl: sqlWasmUrl,
   }),
   plugins: [
-    migrationPlugin([createNotesTableMigration]),
-    reactiveQueriesPlugin,
+    migrationsPlugin({ migrations: [createNotesTableMigration] }),
+    reactiveQueriesPlugin(),
   ],
 };
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <DbProvider config={config}>
