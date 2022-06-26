@@ -11,12 +11,12 @@ import {
 import { createNotesTableMigration } from "./migrations/createNotesTable";
 import sqlWasmUrl from "@trong-orm/sql.js/dist/sql-wasm.wasm";
 import { List } from "./List";
-import { initAbsurdWebBackend } from "@trong-orm/absurd-web-backend";
+import { absurdWebBackend } from "@trong-orm/absurd-web-backend";
 import ReactDOM from "react-dom/client";
 
 const config: IInitDbClientConfig = {
   dbName: "helloWorld",
-  dbBackend: initAbsurdWebBackend({
+  dbBackend: absurdWebBackend({
     wasmUrl: sqlWasmUrl,
   }),
   plugins: [
