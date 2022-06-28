@@ -7,14 +7,15 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@trong-orm/query-builder": "^1.0.37",
-    "@trong-orm/react": "^1.0.37",
-    "@trong-orm/absurd-web-backend": "^1.0.37",
+    "@trong-orm/absurd-web-backend": "^1.0.39",
+    "@trong-orm/query-builder": "^1.0.39",
+    "@trong-orm/react": "^1.0.39",
     "@trong-orm/sql.js": "^1.6.7",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-highlight-words": "^0.18.0",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
     "@types/react-highlight-words": "^0.16.4"
   }
 }
