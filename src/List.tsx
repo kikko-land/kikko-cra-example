@@ -1,4 +1,3 @@
-import { faker } from "@faker-js/faker";
 import {
   deleteFrom,
   insert,
@@ -15,10 +14,22 @@ import {
   useRunQuery,
 } from "@trong-orm/react";
 import { chunk } from "lodash-es";
+import { LoremIpsum } from "lorem-ipsum";
 import { useState } from "react";
 import Highlighter from "react-highlight-words";
 
 import { usePaginator } from "./hooks/usePaginator";
+
+const lorem = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 4,
+  },
+  wordsPerSentence: {
+    max: 16,
+    min: 4,
+  },
+});
 
 type INoteRow = {
   id: string;
@@ -36,11 +47,11 @@ const Row = ({
   row: INoteRow;
   textToSearch: string;
 }) => {
-  const [deleteRecord, deleteRecordState] = useRunQuery(() => async (db) => {
+  const [deleteRecord, deleteRecordState] = useRunQuery((db) => async () => {
     await runQuery(db, deleteFrom(notesTable).where({ id: row.id }));
   });
 
-  const [updateRecord, updateRecordState] = useRunQuery(() => async (db) => {
+  const [updateRecord, updateRecordState] = useRunQuery((db) => async () => {
     await runQuery(
       db,
       update(notesTable)
@@ -113,15 +124,15 @@ export const List = () => {
   const rowsResult = useQuery<INoteRow>(paginatedQuery);
 
   const [createNotes, createNotesState] = useRunQuery(
-    (count: number) => async (db) => {
+    (db) => async (count: number) => {
       for (const ch of chunk(Array.from(Array(count).keys()), 3000)) {
         await runQuery(
           db,
           insert(
             ch.map((i) => ({
               id: makeId(),
-              title: faker.lorem.words(4),
-              content: faker.lorem.paragraph(),
+              title: lorem.generateWords(4),
+              content: lorem.generateParagraphs(1),
               createdAt: new Date().getTime(),
               updatedAt: new Date().getTime(),
             }))
@@ -131,7 +142,7 @@ export const List = () => {
     }
   );
 
-  const [deleteAll, deleteAllState] = useRunQuery(() => async (db) => {
+  const [deleteAll, deleteAllState] = useRunQuery((db) => async () => {
     await runQuery(db, deleteFrom(notesTable));
   });
 
