@@ -7,11 +7,11 @@ import {
   IInitDbClientConfig,
   migrationsPlugin,
   reactiveQueriesPlugin,
-} from "@trong-orm/react";
+} from "@kikko-land/react";
 import { createNotesTableMigration } from "./migrations/createNotesTable";
-import sqlWasmUrl from "@trong-orm/sql.js/dist/sql-wasm.wasm";
+import sqlWasmUrl from "@kikko-land/sql.js/dist/sql-wasm.wasm";
 import { List } from "./List";
-import { absurdWebBackend } from "@trong-orm/absurd-web-backend";
+import { absurdWebBackend } from "@kikko-land/absurd-web-backend";
 import ReactDOM from "react-dom/client";
 
 const config: IInitDbClientConfig = {
